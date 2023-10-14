@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #6a0375;
+
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 2rem;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.input-box {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 30vw;
+  text-indent: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.edit-input-box{
+  outline: none;
+  border: none;
+  height: 25px;
+  width: 100%;
+  text-indent: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-btn {
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #6a0375;
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.todos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.todo-container {
+  width: 300px;
+  background-color: #181423;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 15px;
+  line-height: 2.5rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.todo-title,
+.todo-status {
+  color: #fff;
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #0000ff;
+}
+
+.custom-checkbox:checked {
+  background-color: green;
+  border-color: green;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.custom-checkbox:checked::before {
+  content: "\2713";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  float: inline-end;
+  margin-top: 4rem;
+}
+
+.update-btn,
+.remove-btn {
+  background-color: #0000ff;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.update-btn:hover, .remove-btn:hover {
+  background-color: #1b1b92;
+}
